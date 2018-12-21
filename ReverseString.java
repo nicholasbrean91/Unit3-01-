@@ -3,7 +3,7 @@
 //This program Reverses strings
 
 import java.util.Scanner;
-public class StringReverse {
+public class main {
 
 	public static void main(String[] args) {
 		System.out.println("Enter any string you want to be reversed: ");
@@ -11,10 +11,14 @@ public class StringReverse {
 		
 		if(userInput.hasNextLine()) {
 			String user = userInput.nextLine();
-			String reverse = Reverse(user);
-			System.out.println("The reverse string is " + reverse + "\n");
-		}else {
-			System.out.println("Errors");
+			if(user.length() > 0) {
+				String reverse = Reverse(user);
+				System.out.println("The reverse string is " + reverse + "\n");
+			}else {
+				System.out.println("Enter In a string 1 or Greater letters.");
+			}
+
+			
 		}
 	}
 	
